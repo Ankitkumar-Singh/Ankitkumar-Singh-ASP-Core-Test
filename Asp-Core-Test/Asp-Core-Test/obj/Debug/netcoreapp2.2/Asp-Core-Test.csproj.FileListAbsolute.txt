@@ -62,3 +62,4 @@ D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done\Asp-Core-Test\Asp-Core-Test\o
 D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.dll
 D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.pdb
 D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Asp-Core-Test.csproj.CopyComplete
+D:\Ankitkumar-Singh\Asp-Core-Mvc\test finally done\Asp-Core-Test\Asp-Core-Test\obj\Debug\netcoreapp2.2\Razor\Views\Student\QRCode.g.cshtml.cs

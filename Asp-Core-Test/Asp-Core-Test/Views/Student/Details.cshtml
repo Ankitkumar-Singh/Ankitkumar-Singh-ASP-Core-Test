@@ -4,7 +4,7 @@
 }
 @* Shows the details of selected student *@
 <ol class="breadcrumb my-4">
-    <a asp-action="Index" class="breadcrumb-item">Home</a>
+    <li class="breadcrumb-item"><a asp-action="Index">Home</a></li>
     <li class="breadcrumb-item active">Student Details</li>
 </ol>
 
@@ -79,6 +79,7 @@
                 </dd>
             </dl>
             <a asp-action="Index" class="btn btn-sm btn-warning float-left">Go Back</a>
+            <a asp-controller="Student" asp-action="QRCode" asp-route-id="@Model.Id" class="btn btn-sm float-right btn-primary">View Student Card</a>
         </div>
     </div>
 </div>

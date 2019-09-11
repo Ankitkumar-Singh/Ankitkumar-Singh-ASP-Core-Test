@@ -1,6 +1,9 @@
 ﻿using Asp_Core_Test.Models;
 using Microsoft.AspNetCore.Mvc;
+using QRCoder;
 using System;
+using System.DrawingCore;
+using System.Text;
 
 namespace Asp_Core_Test.Controllers
 {
@@ -81,6 +84,33 @@ namespace Asp_Core_Test.Controllers
         {
             _studentRepository.DeleteStudent(id);
             return RedirectToAction("index");
+        }
+        #endregion
+
+        #region "Generate QRCode of student details"
+        public ActionResult QRCode(Guid id)
+        {
+            StringBuilder sb = new StringBuilder(" ", 500);
+
+            Student studentDetails = _studentRepository.GetStudent(id);
+
+            sb.Append("Id " + studentDetails.Id);
+            sb.Append("\nName " + studentDetails.FirstName + studentDetails.LastName);
+            sb.Append("\nSubject " + studentDetails.PhdSubjectId);
+            sb.Append("\nContsct " + studentDetails.Contact);
+            sb.Append("\nEmail " + studentDetails.Email);
+
+            string studDetails = sb.ToString();
+
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(studDetails, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+            Bitmap qrCodeImage = qrCode.GetGraphic(20);
+
+            // Save generated QR image file.
+            qrCodeImage.Save("D:\\Ankitkumar-Singh\\Asp-Core-Mvc\\test finally done\\Asp-Core-Test\\Asp-Core-Test\\wwwroot\\images\\qrcode.png");
+
+            return View(studentDetails);
         }
         #endregion
     }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "9730342b7b575aaeb702fae13ca2a10b3cc123ef"
+    "signature": "ed136bfd05cd2177d29c5b7f75f072a5d5e45702"
   },
   "compilationOptions": {
     "defines": [
@@ -27,7 +27,8 @@
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
+          "QRCoder": "1.3.0"
         },
         "runtime": {
           "Asp-Core-Test.dll": {}
@@ -205,6 +206,56 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "QRCoder/1.3.0": {
+        "dependencies": {
+          "ZKWeb.System.Drawing": "4.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/QRCoder.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.0"
+          },
+          "lib/netstandard2.0/UnityEngine.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/QRCoder.dll": {},
+          "lib/netstandard2.0/UnityEngine.dll": {}
+        }
+      },
+      "System.ComponentModel/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.ComponentModel.Primitives/4.3.0": {
+        "dependencies": {
+          "System.ComponentModel": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.ComponentModel.TypeConverter/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel": "4.3.0",
+          "System.ComponentModel.Primitives": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0"
+        }
+      },
       "System.Composition/1.0.31": {
         "dependencies": {
           "System.Composition.AttributedModel": "1.0.31",
@@ -340,6 +391,25 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "ZKWeb.System.Drawing/4.0.0": {
+        "dependencies": {
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Threading.Thread": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ZKWeb.System.Drawing.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/ZKWeb.System.Drawing.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3621,6 +3691,34 @@
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
     },
+    "QRCoder/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HdcmG0dFw0BFos+eI/fqL/R8LHXWr7mwzqSRWsQprxPxFfU37ufTikrAHPLBIvs4lLGgj8FOtCqmc8gQAwbHOQ==",
+      "path": "qrcoder/1.3.0",
+      "hashPath": "qrcoder.1.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "path": "system.componentmodel/4.3.0",
+      "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
+      "path": "system.componentmodel.primitives/4.3.0",
+      "hashPath": "system.componentmodel.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.TypeConverter/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
+      "path": "system.componentmodel.typeconverter/4.3.0",
+      "hashPath": "system.componentmodel.typeconverter.4.3.0.nupkg.sha512"
+    },
     "System.Composition/1.0.31": {
       "type": "package",
       "serviceable": true,
@@ -3669,6 +3767,13 @@
       "sha512": "sha512-td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
+    },
+    "ZKWeb.System.Drawing/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lcw/HyN/nOstmAWFBnokLT/LXUbY3Dsu9VP4z/V7XIVHfM3V3/kORZ4DfYw2X9LdEYDO2xMX12kj/aZ5aIpLHw==",
+      "path": "zkweb.system.drawing/4.0.0",
+      "hashPath": "zkweb.system.drawing.4.0.0.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
